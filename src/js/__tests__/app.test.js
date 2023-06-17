@@ -10,7 +10,7 @@ describe('Тестирование игроков', () => {
   test('Тестирование метода Add', () => {
     const team = new Team();
     team.add('swordsman');
-    expect(team.add('swordsman')).toThrow(new Error('Игрок уже существует'));
+    expect(() => team.add('swordsman')).toThrow(new Error('Игрок уже существует'));
   });
   test('Тестирование метода AddAll', () => {
     const team = new Team();
