@@ -1,7 +1,7 @@
 /* eslint-disable linebreak-style */
 export default class ErrorRepository {
   constructor() {
-    this.errors = new Map();
+    this.errors = new Map([[404, 'Файл не найден'], [200, 'Хорошо']]);
   }
 
   add(code, value) {
